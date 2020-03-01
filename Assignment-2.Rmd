@@ -1,0 +1,28 @@
+---
+title: "Assignment 1"
+author: "Nada Hossam Sharkawi"
+date: "`r format(Sys.Date() - 60, '%d %B %Y')`"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Our Graph Data
+
+```{r}
+library(plotly)
+
+library(datasets)
+
+fig <- plot_ly(midwest, x = ~percollege, color = ~state, type = "box")
+
+```
+
+## Slide with Plot
+
+```{r pressure}
+fig
+```
+
